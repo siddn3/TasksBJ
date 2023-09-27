@@ -1,0 +1,42 @@
+<html>
+   <head>
+      <script type="text/javascript">
+         var img = null;
+         var animationInterval;
+
+         function init() {
+            img = document.getElementById('myimg');
+            img.style.position = 'relative';
+            img.style.left = '50px';
+         }
+
+         function moveRight() {
+            img.style.left = parseInt(img.style.left) + 100 + 'px';
+         }
+
+         function moveLeft() {
+            img.style.left = parseInt(img.style.left) - 100 + 'px';
+         }
+
+         function startMoveLeft() {
+            animationInterval = setInterval(moveLeft, 100);
+         }
+
+         function stopMove() {
+            clearInterval(animationInterval);
+         }
+
+         window.onload = init;
+      </script>
+   </head>
+   <body>
+      <form>
+         <img id="myimg" src="./train1.png" />
+         <center>
+            <h2 style="color: darkblue;">Click the following buttons to handle animation</h2>
+            <input type="button" value="Start" onclick="moveRight();" />
+            <input type="button" value="Stop" onmousedown="startMoveLeft();" onmouseup="stopMove();" />
+         </center>
+      </form>
+   </body>
+</html>

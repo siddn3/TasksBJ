@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">    
+</head>
+<body>
+    <center>
+        <h1 style="color: darkblue;">Registration form</h1>
+        <form style="margin-top: 20px;" onsubmit="return validate()" action="https://chennai.vit.ac.in">
+            <table style="margin-left: -90px;">
+                <tr>
+                    <td class="font-weight-bold" align="right">First Name</td>
+                    <td><input id="i1" type="text" size="65px" style="margin-left: 10px; padding-block: -10px;" onfocus="myfunc1()" onkeyup="myfunc1()"></td>
+                    <td id="i11" style="padding-left: 10px;"></td>
+                </tr>
+                <tr>
+                    <td class="font-weight-bold" align="right">Last Name</td>
+                    <td><input id="i2" type="text" size="65px" style="margin-left: 10px; padding-block: -10px; margin-top: 10px;" onfocus="myfunc2()" onkeyup="myfunc2()"></td>
+                    <td id="i22" style="padding-left: 10px;"></td>
+                </tr>
+                <tr>
+                    <td class="font-weight-bold" align="right">Email</td>
+                    <td><input id="i3" type="text" size="65px" style="margin-left: 10px; padding-block: -10px; margin-top: 10px;" onfocus="myfunc3()" onkeyup="myfunc3()"></td>
+                    <td id="i33" style="padding-left: 10px;"></td>
+                </tr>
+                <tr>
+                    <td class="font-weight-bold" align="right">Password</td>
+                    <td><input id="i4" type="password" size="65px" style="margin-left: 10px; padding-block: -10px; margin-top: 10px;" onfocus="myfunc4()" onkeyup="myfunc4()"></td>
+                    <td id="i44" style="padding-left: 10px;"></td>
+                </tr>
+                <tr>
+                    <td class="font-weight-bold" align="right" >Re-enter Password</td>
+                    <td><input id="i5" type="password" size="65px" style="margin-left: 10px; padding-block: -10px; margin-top: 10px;" onfocus="myfunc5()" onkeyup="myfunc5()"></td>
+                    <td id="i55" style="padding-left: 10px;"></td>
+                </tr>
+                <tr>
+                    <td rowspan="2" class="font-weight-bold" align="right">Gender</td>
+                    <td><input type="radio" size="50px" name="gender" style="margin-left: 10px; padding-block: -10px; margin-top: 10px;"/>Male</td>
+                    
+                  </tr>
+                  <tr>
+                    <td><input type="radio" size="50px" name="gender" style="margin-left: 10px; padding-block: -10px; margin-top: 10px;"/>Female</td>
+                  </tr>
+                  <tr>
+                    <tr>
+                        <td class="font-weight-bold" align="right" >Age</td>
+                        <td><input id="i6" type="text" size="65px" style="margin-left: 10px; padding-block: -10px; margin-top: 10px;" onfocus="myfunc6()" onkeyup="myfunc6()"></td>
+                        <td id="i66" style="padding-left: 10px;"></td>
+                    </tr>
+                    <tr>
+                        <td class="font-weight-bold" align="right" >Phone Number</td>
+                        <td><input id="i7" type="text" size="65px" style="margin-left: 10px; padding-block: -10px; margin-top: 10px;" onfocus="myfunc7()" onkeyup="myfunc7()"></td>
+                        <td id="i77" style="padding-left: 10px;"></td>
+                    </tr>
+                    <tr>
+                        <td class="font-weight-bold" align="right">Address</td>
+                        <td><textarea id="i8" size="65px" style="margin-left: 10px; padding-block: 25px; margin-top: 10px; padding-right: 350px;" onfocus="myfunc8()" onkeyup="myfunc8()"></textarea></td>
+                        <td id="i88" style="padding-left: 10px;"></td>
+                    </tr>
+                    <tr>
+                        <td class="font-weight-bold" align="right" >State</td>
+                        <td><input id="i9" type="text" size="65px" style="margin-left: 10px; padding-block: -10px; margin-top: 10px;" onfocus="myfunc9()" onkeyup="myfunc9()"></td>
+                        <td id="i99" style="padding-left: 10px;"></td>
+                    </tr>
+                    <tr>
+                        <td class="font-weight-bold" align="right">Country</td>
+                        <td >
+                            <select style="margin-left: 10px; padding-block: -10px; margin-top: 10px;">
+                                <option>Choose your country</option>
+                                <option>India</option>
+                                <option>Pakistan</option>
+                                <option>China</option>
+                                <option>UAE</option>
+                                <option>USA</option>
+                                <option>UK</option>
+                            </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="font-weight-bold" align="right">Languages known</td>
+                        <td><input type="checkbox" size="65px" style="margin-left: 10px; padding-block: -10px; margin-top: 10px;"/>English
+                        <input type="checkbox"/>Kannada
+                        <input type="checkbox"/>Hindi
+                        <input type="checkbox"/>Telugu
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2"><input type="checkbox" style="margin-top: 10px;"/>Hereby I declare all the given details are true</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" align="right">Log in to <a href="https://www.ethnus.com" target="_blank">Ethnus</a> website</td>
+                      </tr>
+            </table>
+            <button  type="submit" class="btn btn-danger" style="margin: 10px 0; border-radius: 15px;">REGISTER</button>
+        </form>
+    </center>
+    <script>
+        function myfunc1(){
+            
+            var value1=document.getElementById("i1").value;
+
+            if(value1.length==0)
+            {
+                
+                document.getElementById("i11").innerHTML='<p class="text-danger">POOR<p>';
+            }
+            else{
+                document.getElementById("i1").style.border="solid black 1px";
+                document.getElementById("i11").innerHTML='<p><p>';
+            }
+        }
+        function myfunc2(){
+            
+            var value1=document.getElementById("i2").value;
+
+            if(value1.length==0)
+            {
+                
+                document.getElementById("i22").innerHTML='<p class="text-danger">POOR<p>';
+            }
+            else{
+                document.getElementById("i2").style.border="solid black 1px";
+                document.getElementById("i22").innerHTML='<p><p>';
+            }
+        }
+
+        function myfunc3(){
+            
+            var value1=document.getElementById("i3").value;
+
+            if(value1.length==0)
+            {
+                
+                document.getElementById("i33").innerHTML='<p class="text-danger">POOR<p>';
+            }
+            else{
+                document.getElementById("i3").style.border="solid black 1px";
+                document.getElementById("i33").innerHTML='<p><p>';
+            }
+        }
+
+        function myfunc4(){
+            
+            var value1=document.getElementById("i4").value;
+
+            if(value1.length<4)
+            {
+                
+                document.getElementById("i44").innerHTML='<p class="text-danger">POOR<p>';
+            }
+            else{
+                document.getElementById("i4").style.border="solid black 1px";
+                document.getElementById("i44").innerHTML='<p><p>';
+            }
+        }
+
+        function myfunc5(){
+            
+            var value1=document.getElementById("i5").value;
+
+            if(value1.length<4)
+            {
+                
+                document.getElementById("i55").innerHTML='<p class="text-danger">POOR OR MISMATCH<p>';
+            }
+            else{
+                document.getElementById("i5").style.border="solid black 1px";
+                document.getElementById("i55").innerHTML='<p><p>';
+            }
+        }
+
+        function myfunc6(){
+            
+            var value1=document.getElementById("i6").value;
+
+            if(value1.length==0)
+            {
+                
+                document.getElementById("i66").innerHTML='<p class="text-danger">POOR<p>';
+            }
+            else{
+                document.getElementById("i6").style.border="solid black 1px";
+                document.getElementById("i66").innerHTML='<p><p>';
+            }
+        }
+
+        function myfunc7(){
+            
+            var value1=document.getElementById("i7").value;
+
+            if(value1.length==0)
+            {
+                
+                document.getElementById("i77").innerHTML='<p class="text-danger">POOR<p>';
+            }
+            else{
+                document.getElementById("i7").style.border="solid black 1px";
+                document.getElementById("i77").innerHTML='<p><p>';
+            }
+        }
+        function myfunc8(){
+            
+            var value1=document.getElementById("i8").value;
+
+            if(value1=='')
+            {
+                
+                document.getElementById("i88").innerHTML='<p class="text-danger">POOR<p>';
+            }
+            else{
+                document.getElementById("i8").style.border="solid black 1px";
+                document.getElementById("i88").innerHTML='<p><p>';
+            }
+        }
+
+        function myfunc9(){
+            
+            var value1=document.getElementById("i9").value;
+
+            if(value1.length==0)
+            {
+                
+                document.getElementById("i99").innerHTML='<p class="text-danger">POOR<p>';
+            }
+            else{
+                document.getElementById("i9").style.border="solid black 1px";
+                document.getElementById("i99").innerHTML='<p><p>';
+            }
+        }
+        function validate()
+        {
+            var un=document.getElementById("i4").value;
+            var pwd=document.getElementById("i5").value;
+           if(un!=pwd)
+        {
+            document.getElementById("i55").innerHTML='<p class="text-danger">POOR OR MISMATCH<p>';
+            return false;
+        }
+        return true;
+    }
+    </script>
+</body>
+</html>
